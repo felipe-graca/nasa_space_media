@@ -27,7 +27,7 @@ void main() {
 
   // final tNoParams = NoParams();
 
-  final tDate = DateTime(2021, 12, 1);
+  final tDate = DateTime(2022, 12, 08);
 
   test('should get space media for a given date from repository', () async {
     when(() => repository.getSpaceMediaFromDate(tDate)).thenAnswer((_) async => const Right<Failure, SpaceMediaEntity>(tSpaceMedia));
