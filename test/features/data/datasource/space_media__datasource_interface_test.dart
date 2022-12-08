@@ -7,14 +7,14 @@ import 'package:nasa_clean_arch/features/data/datasources/space_media_datasource
 
 import '../../../mocks/space_media_mock.dart';
 
-class HttpClientMock extends Mock implements HttpClient {}
+class HttpServiceInterfaceMock extends Mock implements IHttpService {}
 
 void main() {
   late ISpaceMediaDatasouce datasource;
-  late HttpClient client;
+  late IHttpService client;
 
   setUp(() {
-    client = HttpClientMock();
+    client = HttpServiceInterfaceMock();
     datasource = SpaceMediaDatasource(client);
   });
 

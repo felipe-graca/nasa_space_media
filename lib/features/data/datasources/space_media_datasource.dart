@@ -9,7 +9,7 @@ import 'package:nasa_clean_arch/features/data/datasources/space_media_datasource
 import 'package:nasa_clean_arch/features/data/models/space_media_model.dart';
 
 class SpaceMediaDatasource implements ISpaceMediaDatasouce {
-  final HttpClient client;
+  final IHttpService client;
 
   SpaceMediaDatasource(this.client);
 
